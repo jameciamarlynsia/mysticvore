@@ -65,7 +65,8 @@
 
         .container {
             flex: 0 1 700px;
-            margin-left: 25%;
+            margin-left: auto;
+            margin-right: auto;
             margin-top: 5%;
             padding: 10px;
         }
@@ -191,23 +192,25 @@
 
         .app-form-control {
             width: 100%;
+            text-transform: lowercase;
             padding: 10px 0;
             background: none;
             border: none;
             border-bottom: 1px solid #666;
             color: #b9134f;
             font-size: 14px;
-            text-transform: uppercase;
             outline: none;
             transition: border-color .2s;
         }
 
         .app-form-control::placeholder {
+            text-transform: lowercase;
             color: #E373D3;
         }
 
         .app-form-control:focus {
             border-bottom-color: #ddd;
+            text-transform: lowercase;
         }
 
         .app-form-button {
@@ -322,9 +325,6 @@
 
                             <input class="app-form-control" name="name" placeholder="NAME" value="">
                         </div>
-                            <p class="app-form-group">
-                                <input type="text" class="app-form-control" name="name2" />
-                            </p>
                         <div class="app-form-group">
                             <input class="app-form-control" name="email" placeholder="EMAIL">
                         </div>
