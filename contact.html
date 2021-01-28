@@ -4,174 +4,282 @@
     <meta charset="UTF-8">
     <title>Contact</title>
     <style>
-    body {
-    background-image: url('images/back.png');
-    }
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 2px;
-    border-color: #E373D3;
-    overflow: hidden;
-    background-color: #F3BAEB;
-    }
-
-    li {
-    float: left;
-    border-right:1px solid #E373D3;
-    }
-
-    li:last-child {
-    border-right: none;
-    }
-
-    li a {
-    display: block;
-    margin: 10px;
-    color: white;
-    font-size: medium;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    }
-
-    li a:hover:not(.active) {
-    background-color: #E373D3;
-    }
-
-    .active {
-    background-color: #E373D3;
-    }
-
-    <!-- NEW FORM -->
-    body {
-        background-color: #d1f3e7;
-    }
-
-    #title-Tag-Line {
-        font-size: 20px;
-    }
-    /* .card-item__bg{
-      width: 150px;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      display: block;
-      position: relative;
-      margin: 30px auto;
-      transform: translate(0px, 50px);
-      z-index: 5;
-    } */
-
-    /* form animation starts */
-    .form {
-        background: #fff;
-        box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
-        border-radius: 5px;
-        max-width: 480px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        left: 0;
-        right: 0;
-        position: absolute;
-        border-top: 5px solid #0e3721;
-        /*   z-index: 1; */
-        animation: bounce 1.5s infinite;
-    }
-    ::-webkit-input-placeholder {
-        font-size: 1.3em;
-    }
-
-    .title{
-        display: block;
-        font-family: sans-serif;
-        margin: 10px auto 5px;
-        width: 300px;
-    }
-    .termsConditions{
-        margin: 0 auto 5px 80px;
-    }
-
-    .pageTitle{
-        font-size: 2em;
-        font-weight: bold;
-    }
-    .secondaryTitle{
-        color: grey;
-    }
-
-    .name {
-        background-color: #ebebeb;
-        color: white;
-    }
-    .name:hover {
-        border-bottom: 5px solid #0e3721;
-        height: 30px;
-        width: 380px;
-        transition: ease 0.5s;
-    }
-
-    .email {
-        background-color: #ebebeb;
-        height: 2em;
-    }
-
-    .email:hover {
-        border-bottom: 5px solid #0e3721;
-        height: 30px;
-        width: 380px;
-        transition: ease 0.5s;
-    }
-
-    .message {
-        background-color: #ebebeb;
-        overflow: hidden;
-        height: 10rem;
-    }
-
-    .message:hover {
-        border-bottom: 5px solid #0e3721;
-        height: 12em;
-        width: 380px;
-        transition: ease 0.5s;
-    }
-
-    .formEntry {
-        display: block;
-        margin: 30px auto;
-        min-width: 300px;
-        padding: 10px;
-        border-radius: 2px;
-        border: none;
-        transition: all 0.5s ease 0s;
-    }
-
-    .submit {
-        width: 200px;
-        color: white;
-        background-color: #0e3721;
-        font-size: 20px;
-    }
-
-    .submit:hover {
-        box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
-        transform: translateY(-3px);
-        width: 300px;
-        border-top: 5px solid #0e3750;
-        border-radius: 0%;
-    }
-
-    @keyframes bounce {
-        0% {
-            tranform: translate(0, 4px);
+        body {
+            background-image: url('images/back.png');
         }
-        50% {
-            transform: translate(0, 8px);
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 2px;
+            border-color: #E373D3;
+            overflow: hidden;
+            background-color: #F3BAEB;
         }
-    }
+
+        li {
+            float: left;
+            border-right:1px solid #E373D3;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            margin: 10px;
+            color: white;
+            font-size: medium;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #E373D3;
+        }
+
+        .active {
+            background-color: #E373D3;
+        }
+
+        <!-- NEW FORM -->
+        *, *:before, *:after {
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+
+
+        body, button, input {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1.4px;
+        }
+
+        .background {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .container {
+            flex: 0 1 700px;
+            margin-left: 25%;
+            margin-top: 5%;
+            padding: 10px;
+        }
+
+        .screen {
+            position: relative;
+            background: #D8BFD8;
+            border-radius: 15px;
+        }
+
+        .screen:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 20px;
+            right: 20px;
+            bottom: 0;
+            background-color:  pink;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px #ffa4bd;
+            z-index: -1;
+        }
+
+        .screen-header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: #E373D3;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .screen-header-left {
+            margin-right: auto;
+        }
+
+        .screen-header-button {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-right: 3px;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .screen-header-button.close {
+            background: #ed1c6f;
+        }
+
+        .screen-header-button.maximize {
+            background: #e8e925;
+        }
+
+        .screen-header-button.minimize {
+            background: #74c54f;
+        }
+
+        .screen-header-right {
+            display: flex;
+        }
+
+        .screen-header-ellipsis {
+            width: 3px;
+            height: 3px;
+            margin-left: 2px;
+            border-radius: 8px;
+            background: #999;
+        }
+
+        .screen-body {
+            display: flex;
+
+        }
+
+        .screen-body-item {
+            flex: 1;
+            padding: 50px;
+        }
+
+        .screen-body-item.left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-title {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            color: #E373D3;
+            font-size: 26px;
+        }
+
+        .app-title:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 40px;
+            height: 4px;
+            background: #b9134f;
+        }
+
+        .app-contact {
+            margin-top: auto;
+            font-size: 8px;
+            color: #b9134f;
+        }
+
+        .app-form-group {
+            margin-bottom: 15px;
+        }
+
+        .app-form-group.message {
+            margin-top: 40px;
+        }
+
+        .app-form-group.buttons {
+            margin-bottom: 0;
+            text-align: right;
+        }
+
+        .app-form-control {
+            width: 100%;
+            padding: 10px 0;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #666;
+            color: #b9134f;
+            font-size: 14px;
+            text-transform: uppercase;
+            outline: none;
+            transition: border-color .2s;
+        }
+
+        .app-form-control::placeholder {
+            color: #E373D3;
+        }
+
+        .app-form-control:focus {
+            border-bottom-color: #ddd;
+        }
+
+        .app-form-button {
+            background: none;
+            border: none;
+            color: #b9134f;
+            font-size: 14px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .app-form-button:hover {
+            color: #b9134f;
+        }
+
+        .credits {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            color: #ffa4bd;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .credits-link {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .dribbble {
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+        }
+
+        @media screen and (max-width: 520px) {
+            .screen-body {
+                flex-direction: column;
+            }
+
+            .screen-body-item.left {
+                margin-bottom: 30px;
+            }
+
+            .app-title {
+                flex-direction: row;
+            }
+
+            .app-title span {
+                margin-right: 12px;
+            }
+
+            .app-title:after {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .screen-body {
+                padding: 40px;
+            }
+
+            .screen-body-item {
+                padding: 0;
+            }
+        }
+
 
 
     </style>
@@ -183,21 +291,69 @@
     <li><a class="active" href="#contact">Contact</a></li>
     <li style="float:right"><a class="active" href="#about">About Me</a></li>
 </ul>
-
-
-<div class="wrapper">
-    <form class="form" name="contact" method="POST" action="index.html" data-netlify="true">
- 
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-
-  <p>
-    <button type="submit">Send</button>
-  </p>
-    </form>
+<form class="form" name="contact" method="POST" data-netlify="true">
+<div class="background">
+    <div class="container">
+        <div class="screen">
+            <div class="screen-header">
+                <div class="screen-header-left">
+                    <div class="screen-header-button close"></div>
+                    <div class="screen-header-button maximize"></div>
+                    <div class="screen-header-button minimize"></div>
+                </div>
+                <div class="screen-header-right">
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                </div>
+            </div>
+            <div class="screen-body">
+                <div class="screen-body-item left">
+                    <div class="app-title">
+                        <span>CONTACT</span>
+                        <span>US</span>
+                    </div>
+                    <div class="app-contact">CONTACT MYTHICVORE SUPPORT TEAM</div>
+                </div>
+                <div class="screen-body-item">
+                    <div class="app-form">
+                        <div class="app-form-group">
+                            <input class="app-form-control" placeholder="NAME" value="">
+                        </div>
+                        <div class="app-form-group">
+                            <input class="app-form-control" placeholder="EMAIL">
+                        </div>
+                        <div class="app-form-group">
+                            <input class="app-form-control" placeholder="CONTACT NO">
+                        </div>
+                        <div class="app-form-group message">
+                            <input class="app-form-control" placeholder="MESSAGE">
+                        </div>
+                        <div class="app-form-group buttons">
+                            <button class="app-form-button">CANCEL</button>
+                            <button class="app-form-button">SEND</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="credits">
+            mythicvore llc.
+            <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+                <svg class="dribbble" viewBox="0 0 200 200">
+                    <g stroke="#ffffff" fill="none">
+                        <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
+                        <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
+                        <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
+                        <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
 </div>
-<script src="app.js"></script>
+</form>
+
+
 </body>
 </html>
