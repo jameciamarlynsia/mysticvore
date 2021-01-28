@@ -54,6 +54,25 @@
     div.video {
         float: right;
     }
+
+    .container { position:relative; }
+    .container video {
+        position:relative;
+        z-index:0;
+    }
+    .overlay {
+        position:absolute;
+        top:30%;
+        left:25%;
+        z-index:1;
+    }
+    .white {
+        color: ghostwhite;
+        font-size: 100px;
+    border-color: #bbbbff;
+        font-weight: bolder;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
 </style>
 </head>
 <body>
@@ -66,27 +85,19 @@
 </ul>
 
 <div>
-<video class="top" width="540" height="650" autoplay loop muted>
+<video class="top" width="470" height="650" autoplay loop muted>
     <source src="images/sheets.mp4" type="video/mp4">
 </video>
 
-    <h1 class="cs">COMING SOON!&nbsp    &nbspCOMING SOON!&nbsp   &nbspCOMING SOON!&nbsp &nbspCOMING SOON!   &nbsp</h1>
-    <br>
-    <h1 class="cs">COMING SOON!</h1>
-    <br>
-    <h1 class="cs">COMING SOON!</h1>
-    <br>
-    <h1 class="cs">COMING SOON!</h1>
-    <br>
-    <h1 class="cs">COMING SOON!</h1>
-    <br>
-    <h1 class="cs">COMING SOON!</h1>
-    <br>
-    <h1 class="cs">COMING SOON!</h1>
-    <br>
-    <h1 class="cs">COMING SOON!</h1>
-    <br>
-    <h1 class="cs">COMING SOON!</h1>
+    <video class="top" width="470" height="650" autoplay loop muted>
+        <source src="images/sheets.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+        <p class="white">COMING SOON!</p>
+    </div>
+    <video class="top" width="470" height="650" autoplay loop muted>
+        <source src="images/sheets.mp4" type="video/mp4">
+    </video>
 </div>
 
 
